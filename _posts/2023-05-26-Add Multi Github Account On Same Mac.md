@@ -17,11 +17,11 @@ pin: true
 
 在一台Mac上配置多个GitHub账号,可以按以下步骤操作:  
 ### 1. 生成多个SSH密钥:
-```
+```shell
 #bash
-// 将email修改为你的第一账户的email，建议为常用的账号
+# 将email修改为你的第一账户的email，建议为常用的账号
 ssh-keygen -q -t rsa -C "your_email_1@example.com" -f ~/.ssh/id_rsa_github_1 -N ""
-// 将email修改为你的第二账户的email
+# 将email修改为你的第二账户的email
 ssh-keygen -q -t rsa -C "your_email_2@example.com" -f ~/.ssh/id_rsa_github_2 -N ""
 ```
 上述命令将将会生成两个SSH密钥对`id_rsa_github_1`和`id_rsa_github_2`,分别对应两个GitHub账号。  
@@ -30,7 +30,7 @@ ssh-keygen -q -t rsa -C "your_email_2@example.com" -f ~/.ssh/id_rsa_github_2 -N 
 分别将`id_rsa_github_1.pub`和`id_rsa_github_2.pub`文件的内容添加到对应的GitHub账号的SSH Keys设置页面，注意别搞反了哦！  
 可以用以下命令将文件内容读取到剪贴板：
 
-```
+```shell
 #bash
 pbcopy < id_rsa_github_1.pub
 pbcopy < id_rsa_github_2.pub
@@ -39,7 +39,7 @@ pbcopy < id_rsa_github_2.pub
 ### 3. 配置SSH config文件:
 在`~/.ssh/`目录下创建`config`文件：
 
-```
+```shell
 #bash
 touch ~/.ssh/config
 ```
@@ -60,7 +60,7 @@ PreferredAuthentications publickey
 
 ### 4. 把专用密钥添加到高速缓存中
 
-```
+```shell
 #bash
 ssh-add --apple-use-keychain ~/.ssh/id_rsa_github_1
 ssh-add --apple-use-keychain ~/.ssh/id_rsa_github_2
@@ -68,21 +68,21 @@ ssh-add --apple-use-keychain ~/.ssh/id_rsa_github_2
 
 ### 5. 测试SSH连接:
 
-```
+```shell
 #bash
 ssh -T git@github.com
 ssh -T git@github_2.com
 ```
 正常情况下，你会得到如下消息：
 
-```
+```shell
 Hi xxx! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 如果都可以成功登录,则SSH连接配置成功。
 ### 6. 清除global config配置
 可以用`git config -l` 查看是否配置过`user.name`, `user.email`，如果配置过，则用以下命令unset:  
 
-```
+```shell
 git config --global --unset user.name 
 git config --global --unset user.email
 ```
@@ -93,13 +93,13 @@ git config --global --unset user.email
 
 当克隆第一个GitHub账号的仓库时,使用git@<font color="#dd0000">github.com</font>:
 
-```
+```shell
 #bash
 git clone git@github.com:username/repo.git
 ```
 当克隆第二个GitHub账号的仓库时,使用git@<font color="#dd0000">github_2.com</font>:
 
-```
+```shell
 #bash 
 git clone git@github_2.com:username/repo.git
 ```
@@ -107,7 +107,7 @@ git clone git@github_2.com:username/repo.git
 这会自动使用对应的SSH密钥与GitHub账号连接。  
 拉取成功后，为了方便，你可以在`cd`到对应的仓库目录下，用下述命令配置`user.name`和`user.email`
 
-```
+```shell
 git config --local user.name "youname"
 git config --local user.email "youemail@xx.com"
 ```
@@ -118,7 +118,7 @@ git config --local user.email "youemail@xx.com"
 > **附加方法**：如果想更省事，可以将下面的代码保存为 xxx.sh 然后按提示一步步执行.
 {: .prompt-info }
 
-```
+```shell
 echo Start to config==================
 echo -n "Enter the first github account email(as default account): "
 read email_1
