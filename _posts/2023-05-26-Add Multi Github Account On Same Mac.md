@@ -1,5 +1,5 @@
 ---
-title: 一台Mac上配置多个Github账号，工作/摸鱼两不误
+title: 【Git】一台Mac上配置多个Github账号，工作/摸鱼两不误
 date: 2023-05-26 22:20:00 +/-0800  
 categories: [devtools, github]  
 tags: [multi, github, account, mac, macos]

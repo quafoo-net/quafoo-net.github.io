@@ -1,5 +1,5 @@
 ---
-title: 尝试用Stable Diffusion美图分享💃
+title: 【AI】尝试用Stable Diffusion美图分享💃
 date: 2023-05-26 22:50:00 +/-0800  
 categories: [ai, aigc]  
 tags: [stable diffusion, aigc, girls, beauty, sd, ai]
