@@ -20,7 +20,7 @@ timezone: Asia/Shanghai
 
 title: Quafoo # the main title
 
-tagline: A Tech Blog about AI and Delelopment. # it will display as the sub-title
+tagline: Quafoo is a legendary character in a Chinese folk tale. He chases the sun in order to relieve the suffering of his people from the harsh drought. Chinese grandparents relate this story to their grandchildren in order to inspire them not to give up when chasing their goals. # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   Welcome to Quafoo, a tech blog about AI and development.

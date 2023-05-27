@@ -8,7 +8,7 @@ img_path: /assets/img/devtools/github/
 #image:
 #  path: 5.jpg
 #  alt: Github  
-pin: true
+#pin: true
 
 ---
 

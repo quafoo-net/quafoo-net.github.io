@@ -8,14 +8,15 @@ img_path: /assets/img/aigc/sd/
 image:
   path: 5.jpg
 #  alt: Github  
-pin: true
+#pin: true
 
 ---
 
 
 今天用Stable Diffusion生成了一批图片，效果令人惊叹，分享给大家喽！
+
 ![aigc girl 4](4.jpg)
 ![aigc girl 1](1.jpg)
 ![aigc girl 2](2.jpg)
 ![aigc girl 3](3.jpg)
-
+![aigc girl 4](5.jpg)
