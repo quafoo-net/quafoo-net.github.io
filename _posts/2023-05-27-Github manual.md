@@ -4,6 +4,7 @@ date: 2023-05-27 08:50:00 +/-0800
 categories: [devtools, github]  
 tags: [github,git command, development, git, tools]
 author: seven_altman
+excerpt: 你是否对Git命令还不够熟悉，或厌倦了到处查找相同的常用 Git 命令，这里有一个详细的常用命令清单供参考，可以涵盖日常开发中几乎全部的需求。
 img_path: /assets/img/devtools/github/
 #image:
 #  path: 5.jpg

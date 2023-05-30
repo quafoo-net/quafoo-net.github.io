@@ -4,6 +4,7 @@ date: 2023-05-27 15:30:00 +/-0800
 categories: [brand, story]  
 tags: [quafoo, 夸父, hero, chinese]
 authors: [seven_altman, x_altman]
+excerpt: 据《山海经》记载，夸父形体巨大，珥两黄蛇，把两黄蛇，夸父存在兽、人、神三种形态。他不怕困难、英勇无畏，有着为民着想、为民造福的精神。
 img_path: /assets/img/brand/story/
 image:
   path: quafoo_clip.png

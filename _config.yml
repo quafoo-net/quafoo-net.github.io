@@ -32,7 +32,7 @@ github:
   username: Quafoo # change to your github username
 
 twitter:
-  username: NOT_SET_FOR_NOW # change to your twitter username
+  username: quafoo_net # change to your twitter username
 
 social:
   # Change to your full name.
@@ -41,7 +41,7 @@ social:
   email: quafoo.net@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/NOT_SET_FOR_NOW # change to your twitter homepage
+    - https://twitter.com/quafoo_net # change to your twitter homepage
     - https://github.com/quafoo-net # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
@@ -86,7 +86,7 @@ avatar: /assets/img/avatar/avatar.png
 toc: true
 
 comments:
-  active: # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  active: disqus # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname

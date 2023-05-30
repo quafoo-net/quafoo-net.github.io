@@ -4,6 +4,7 @@ date: 2023-05-26 22:50:00 +/-0800
 categories: [ai, aigc]  
 tags: [stable diffusion, aigc, girls, beauty, sd, ai]
 authors: [seven_altman, x_altman]
+excerpt: 今天用Stable Diffusion生成了一批图片，效果令人惊叹，分享给大家！欢迎有兴趣的小伙伴分享更多好玩的内容。
 img_path: /assets/img/aigc/sd/
 image:
   path: 5.jpg

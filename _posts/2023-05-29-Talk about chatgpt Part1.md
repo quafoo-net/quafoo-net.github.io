@@ -4,6 +4,7 @@ date: 2023-05-29 22:10:00 +/-0800
 categories: [ai, ChatGPT]  
 tags: [ai, chatgpt, epistemology, gpt, llm]
 author: seven_altman
+excerpt: AI发展至今，从最初的简单规则、再到机器学习、再到深度学习、神经网络、大模型、ChatGPT，甚至包括脑机接口等研究，人类在这方面的不断探索：一方面是从医学、生物、电磁等特征去尝试剖析、捕捉、分析人脑这个黑盒，希望探究他的存储、运算的机理，另一方面又是从技术上不断尝试去模仿这个黑盒
 img_path: /assets/img/ai/gpt/
 image:
   path: ai_brain.png

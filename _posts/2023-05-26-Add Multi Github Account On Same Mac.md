@@ -4,6 +4,7 @@ date: 2023-05-26 22:20:00 +/-0800
 categories: [devtools, github]  
 tags: [multi, github, account, mac, macos]
 authors: [seven_altman, x_altman]
+excerpt: 本文详细讲解如何在一台Mac上配置多个Github账户，提供Step by step的操作指引，在文章的最后还提供了一个完整的Shell快捷脚本。
 img_path: /assets/img/devtools/github/
 #image:
 #  path: code_preview.png
