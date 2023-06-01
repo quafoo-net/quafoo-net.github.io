@@ -7,10 +7,12 @@ html {
     &:not([data-mode]),
     &[data-mode='light'] {
       @include light-scheme;
+      @include light-gtalk;
     }
 
     &[data-mode='dark'] {
       @include dark-scheme;
+      @include dark-gtalk;
     }
   }
 
@@ -18,10 +20,12 @@ html {
     &:not([data-mode]),
     &[data-mode='dark'] {
       @include dark-scheme;
+      @include dark-gtalk;
     }
 
     &[data-mode='light'] {
       @include light-scheme;
+      @include light-gtalk;
     }
   }
 
