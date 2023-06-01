@@ -86,7 +86,7 @@ avatar: /assets/img/avatar/avatar.png
 toc: true
 
 comments:
-  active: disqus # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  active: gitalk # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
@@ -104,6 +104,23 @@ comments:
     input_position: # optional, default to 'bottom'
     lang: # optional, default to the value of `site.lang`
     reactions_enabled: # optional, default to the value of `1`
+  gitalk: # Gitalk options ›
+    repo: quafoo-net.github.io # <owner>/<repo>
+    client_id: a4ab2e60fcf26b4b4ab1 # GitHub Application Client ID
+    client_secret: 4e5f6403af9123098f38f03fce6812db4fafbdf2 # GitHub Application Client Secret
+    owner: quafoo-net # GitHub repo owner and collaborators, only these guys can initialize Gitalk discussions
+    admin: quafoo-net # GitHub repo owner and collaborators, only these guys can initialize Gitalk discussions
+    # The ID of a default issue. By default, Gitalk will generate a random ID for each page as its issue ID.
+    # You can use this setting to make comments of Gitalk reusable.
+    # e.g. 'pathname', 'title', 'url', 'og:title', 'og:url', 'og:image', 'twitter:title', 'twitter:url', 'twitter:image'
+    id: location.pathname # optional, default to the value of `pathname`
+    # The number of issues to be displayed on each page
+    perPage: 30 # optional, default to the value of `30`
+    labels: gitalk # optional, default to `['Gitalk']`
+    pagerDirection: last # optional, default to `first`
+    createIssueManually: false # optional, default to `false`
+    distractionFreeMode: false # optional, default to `false`
+
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
