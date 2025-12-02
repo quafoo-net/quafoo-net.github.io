@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>测试主页 - It Works!</title>
+    <style>
+        /* 简单的 CSS 重置和样式 */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f0f2f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: #4a5568;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .test-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 2px dashed #ccc;
+            padding: 5px;
+        }
+
+        /* 按钮样式 */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #667eea;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #5a6fd6;
+        }
+
+        #js-result {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #38a169;
+            min-height: 1.6em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #f7fafc;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🎉 It Works!</h1>
+            <p>恭喜，你的测试主页已成功加载。</p>
+        </header>
+
+        main>
+            <section>
+                <h2>📜 页面信息</h2>
+                <p>这是一个独立的 HTML 测试页面。如果你看到了这个页面，说明你的 Nginx/Apache 服务器配置正确，或者你的浏览器可以正常解析 HTML 文件。</p>
+            </section>
+
+            <section>
+                <h2>✅ 功能测试清单</h2>
+                <ul>
+                    <li>HTML 结构解析正常</li>
+                    <li>CSS 样式加载正常 (页面应该看起来不像纯文本)</li>
+                    <li>中文字符显示正常</li>
+                    <li><a href="https://www.github.com" target="_blank">外部链接跳转测试 (GitHub)</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>🖼️ 图片加载测试</h2>
+                <p>下图应该显示一个灰色的占位图片（需要互联网连接）：</p>
+                <img class="test-image" src="https://via.placeholder.com/600x200?text=Image+Loaded+Successfully" alt="测试图片">
+            </section>
+
+            <section>
+                <h2>⚡ JavaScript 交互测试</h2>
+                <p>点击下方按钮测试 JavaScript 是否正常运行：</p>
+                <button id="test-btn" class="btn">点击我测试 JS</button>
+                <p id="js-result"></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>此页面生成于: <span id="current-date">加载中...</span></p>
+        </footer>
+    </div>
+
+    <script>
+        // 简单的 JavaScript 测试代码
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("Test page loaded successfully!");
+
+            // 1. 设置页脚的时间
+            const dateSpan = document.getElementById('current-date');
+            dateSpan.textContent = new Date().toLocaleString();
+
+            // 2. 按钮点击交互测试
+            const btn = document.getElementById('test-btn');
+            const resultP = document.getElementById('js-result');
+
+            btn.addEventListener('click', function() {
+                resultP.textContent = "✨ 成功！JavaScript 运行正常。";
+                // 简单的动画效果
+                this.style.backgroundColor = "#38a169";
+                this.textContent = "已测试";
+                setTimeout(() => {
+                    this.style.backgroundColor = "";
+                    this.textContent = "再次点击测试";
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>
